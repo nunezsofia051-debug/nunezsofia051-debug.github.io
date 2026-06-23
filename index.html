@@ -1,297 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sofía Núñez | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofía Núñez | Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-body{
-background:#0f172a;
-color:white;
-}
-
-header{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
-}
-
-.avatar{
-font-size:100px;
-margin-bottom:20px;
-}
-
-h1{
-font-size:60px;
-}
-
-header h2{
-font-weight:400;
-color:#cbd5e1;
-margin-top:10px;
-}
-
-header p{
-margin-top:20px;
-font-size:18px;
-max-width:700px;
-color:#e2e8f0;
-}
-
-.botones{
-margin-top:35px;
-display:flex;
-gap:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.botones a{
-background:#2563eb;
-color:white;
-padding:14px 25px;
-border-radius:10px;
-text-decoration:none;
-transition:0.3s;
-}
-
-.botones a:hover{
-background:#1d4ed8;
-transform:translateY(-3px);
-}
-
-section{
-max-width:1100px;
-margin:auto;
-padding:80px 20px;
-}
-
-.titulo{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-}
-
-.sobre{
-background:#1e293b;
-padding:40px;
-border-radius:20px;
-line-height:1.8;
-}
-
-.tecnologias{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:20px;
-}
-
-.tech{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-text-align:center;
-font-size:20px;
-transition:0.3s;
-}
-
-.tech:hover{
-transform:translateY(-8px);
-}
-
-.proyectos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.card p{
-color:#cbd5e1;
-line-height:1.7;
-}
-
-.card a{
-display:inline-block;
-margin-top:20px;
-color:#60a5fa;
-text-decoration:none;
-}
-
-.estadisticas{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
-footer{
-text-align:center;
-padding:40px;
-background:#020617;
-color:#94a3b8;
-}
-
-@media(max-width:700px){
-
-h1{
-font-size:40px;
-}
-
-.titulo{
-font-size:32px;
-}
-
-}
-
-</style>
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<header>
+    <div id="particles"></div>
 
-<div class="avatar">👩‍💻</div>
+    <header>
 
-<h1>Sofía Núñez</h1>
+        <div class="avatar">
 
-<h2>💻 Estudiante de Programación</h2>
+            <!-- Más adelante pondremos tu avatar aquí -->
+            <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png">
 
-<p>
-Interesada en el desarrollo de software y bases de datos. Actualmente continúo ampliando mis conocimientos mediante proyectos académicos y el aprendizaje constante.
-</p>
+        </div>
 
-<div class="botones">
+        <h1>Sofía Núñez</h1>
 
-<a href="https://github.com/nunezsofia051-debug" target="_blank">GitHub</a>
+        <h2>💻 Estudiante de Programación</h2>
 
-<a href="https://www.linkedin.com/in/sofia-nu%C3%B1ez-23686833b/" target="_blank">LinkedIn</a>
+        <p>
+            Interesada en el desarrollo de software y bases de datos.
+            Actualmente continúo aprendiendo y desarrollando proyectos académicos.
+        </p>
 
-<a href="mailto:nunezsofia051@gmail.com">Contacto</a>
+        <div class="botones">
 
-</div>
+            <a href="https://github.com/nunezsofia051-debug" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
 
-</header>
+            <a href="https://www.linkedin.com/in/sofia-nu%C3%B1ez-23686833b/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+            </a>
 
-<section>
+            <a href="mailto:nunezsofia051@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                Contacto
+            </a>
 
-<h2 class="titulo">Sobre mí</h2>
+        </div>
 
-<div class="sobre">
+    </header>
 
-Soy estudiante de programación con interés en el desarrollo de software y bases de datos. Me encuentro adquiriendo experiencia a través de proyectos académicos y aprendiendo nuevas tecnologías. Busco continuar desarrollándome profesionalmente en el área tecnológica.
 
-</div>
+    <section>
 
-</section>
+        <h2 class="titulo">Sobre mí</h2>
 
-<section>
+        <div class="sobre">
 
-<h2 class="titulo">Tecnologías y Herramientas</h2>
+            <p>
+                Soy estudiante de programación con interés en el desarrollo de software y bases de datos.
+                Me encuentro adquiriendo experiencia mediante proyectos académicos y aprendizaje continuo.
+                Mi objetivo es seguir desarrollándome profesionalmente en el área tecnológica.
+            </p>
 
-<div class="tecnologias">
+        </div>
 
-<div class="tech">🌐 HTML</div>
+    </section>
 
-<div class="tech">🎨 CSS</div>
 
-<div class="tech">⚡ JavaScript</div>
+    <section>
 
-<div class="tech">🐘 PostgreSQL</div>
+        <h2 class="titulo">Tecnologías y Herramientas</h2>
 
-<div class="tech">🔧 Git</div>
+        <div class="tecnologias">
 
-<div class="tech">🐙 GitHub</div>
+            <div class="tech">🌐 HTML</div>
+            <div class="tech">🎨 CSS</div>
+            <div class="tech">⚡ JavaScript</div>
+            <div class="tech">🐘 PostgreSQL</div>
+            <div class="tech">🔧 Git</div>
+            <div class="tech">🐙 GitHub</div>
+            <div class="tech">📚 PSeInt</div>
 
-<div class="tech">📚 PSeInt</div>
+        </div>
 
-</div>
+    </section>
 
-</section>
 
-<section>
+    <section>
 
-<h2 class="titulo">Proyectos Destacados</h2>
+        <h2 class="titulo">Proyectos Destacados</h2>
 
-<div class="proyectos">
+        <div class="proyectos">
 
-<div class="card">
+            <div class="card">
 
-<h3>🎮 VideoJuego</h3>
+                <h3>🎮 VideoJuego POO</h3>
 
-<p>
-Proyecto académico desarrollado para aplicar conceptos de programación y organización del código.
-</p>
+                <p>
+                    Proyecto académico desarrollado para aplicar conceptos de programación.
+                </p>
 
-<a href="https://github.com/nunezsofia051-debug" target="_blank">Ver repositorio →</a>
+                <a href="https://github.com/nunezsofia051-debug/VideoJuego-POO-" target="_blank">
+                    Ver repositorio →
+                </a>
 
-</div>
+            </div>
 
-<div class="card">
+            <div class="card">
 
-<h3>🎬 Servicio de Streaming</h3>
+                <h3>🎬 Servicio de Streaming</h3>
 
-<p>
-Proyecto académico orientado a la simulación y gestión de una plataforma de streaming.
-</p>
+                <p>
+                    Proyecto académico orientado a la simulación y gestión de una plataforma de streaming.
+                </p>
 
-<a href="https://github.com/nunezsofia051-debug" target="_blank">Ver repositorio →</a>
+                <a href="https://github.com/nunezsofia051-debug/Servicio_De_Streaming" target="_blank">
+                    Ver repositorio →
+                </a>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</section>
+    </section>
 
-<section>
 
-<h2 class="titulo">Estadísticas de GitHub</h2>
+    <section>
 
-<div class="estadisticas">
+        <h2 class="titulo">Estadísticas de GitHub</h2>
 
-<img src="https://github-readme-stats.vercel.app/api?username=nunezsofia051-debug&show_icons=true&theme=tokyonight">
+        <div class="estadisticas">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nunezsofia051-debug&layout=compact&theme=tokyonight">
+            <img src="https://github-readme-stats.vercel.app/api?username=nunezsofia051-debug&show_icons=true&theme=tokyonight">
 
-</div>
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nunezsofia051-debug&layout=compact&theme=tokyonight">
 
-</section>
+        </div>
 
-<footer>
+    </section>
 
-<p>© 2026 Sofía Núñez | Portfolio Profesional</p>
 
-</footer>
+    <footer>
+
+        © 2026 Sofía Núñez | Portfolio Profesional
+
+    </footer>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
