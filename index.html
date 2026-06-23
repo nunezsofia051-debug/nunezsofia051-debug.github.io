@@ -3,106 +3,294 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sofía Núñez - Portfolio</title>
+<title>Sofía Núñez | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-font-family:Arial,sans-serif;
-background:#f4f4f4;
+
+*{
 margin:0;
-color:#333;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
 }
 
 header{
-background:#1f2937;
-color:white;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:50px;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+}
+
+.avatar{
+font-size:100px;
+margin-bottom:20px;
+}
+
+h1{
+font-size:60px;
+}
+
+header h2{
+font-weight:400;
+color:#cbd5e1;
+margin-top:10px;
+}
+
+header p{
+margin-top:20px;
+font-size:18px;
+max-width:700px;
+color:#e2e8f0;
+}
+
+.botones{
+margin-top:35px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.botones a{
+background:#2563eb;
+color:white;
+padding:14px 25px;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.botones a:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
 }
 
 section{
-max-width:900px;
+max-width:1100px;
 margin:auto;
-background:white;
+padding:80px 20px;
+}
+
+.titulo{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.sobre{
+background:#1e293b;
+padding:40px;
+border-radius:20px;
+line-height:1.8;
+}
+
+.tecnologias{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.tech{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+font-size:20px;
+transition:0.3s;
+}
+
+.tech:hover{
+transform:translateY(-8px);
+}
+
+.proyectos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1e293b;
 padding:30px;
+border-radius:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card p{
+color:#cbd5e1;
+line-height:1.7;
+}
+
+.card a{
+display:inline-block;
 margin-top:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#2563eb;
-}
-
-ul{
-line-height:2;
-}
-
-a{
-color:#2563eb;
+color:#60a5fa;
 text-decoration:none;
 }
 
-footer{
-background:#1f2937;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
+.estadisticas{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+color:#94a3b8;
+}
+
+@media(max-width:700px){
+
+h1{
+font-size:40px;
+}
+
+.titulo{
+font-size:32px;
+}
+
+}
+
 </style>
 </head>
-
 <body>
 
 <header>
+
+<div class="avatar">👩‍💻</div>
+
 <h1>Sofía Núñez</h1>
-<h3>💻 Estudiante de Programación</h3>
-<p>Interesada en el desarrollo de software y bases de datos</p>
+
+<h2>💻 Estudiante de Programación</h2>
+
+<p>
+Interesada en el desarrollo de software y bases de datos. Actualmente continúo ampliando mis conocimientos mediante proyectos académicos y el aprendizaje constante.
+</p>
+
+<div class="botones">
+
+<a href="https://github.com/nunezsofia051-debug" target="_blank">GitHub</a>
+
+<a href="https://www.linkedin.com/in/sofia-nu%C3%B1ez-23686833b/" target="_blank">LinkedIn</a>
+
+<a href="mailto:nunezsofia051@gmail.com">Contacto</a>
+
+</div>
+
 </header>
 
 <section>
-<h2>Sobre mí</h2>
+
+<h2 class="titulo">Sobre mí</h2>
+
+<div class="sobre">
+
+Soy estudiante de programación con interés en el desarrollo de software y bases de datos. Me encuentro adquiriendo experiencia a través de proyectos académicos y aprendiendo nuevas tecnologías. Busco continuar desarrollándome profesionalmente en el área tecnológica.
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Tecnologías y Herramientas</h2>
+
+<div class="tecnologias">
+
+<div class="tech">🌐 HTML</div>
+
+<div class="tech">🎨 CSS</div>
+
+<div class="tech">⚡ JavaScript</div>
+
+<div class="tech">🐘 PostgreSQL</div>
+
+<div class="tech">🔧 Git</div>
+
+<div class="tech">🐙 GitHub</div>
+
+<div class="tech">📚 PSeInt</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Proyectos Destacados</h2>
+
+<div class="proyectos">
+
+<div class="card">
+
+<h3>🎮 VideoJuego</h3>
 
 <p>
-Soy estudiante de programación con interés en el desarrollo de software y las bases de datos. Actualmente desarrollo proyectos académicos utilizando Java, PostgreSQL y Git/GitHub.
+Proyecto académico desarrollado para aplicar conceptos de programación y organización del código.
 </p>
 
-<h2>Tecnologías y herramientas</h2>
+<a href="https://github.com/nunezsofia051-debug" target="_blank">Ver repositorio →</a>
 
-<ul>
-<li>Java</li>
-<li>PostgreSQL</li>
-<li>Git y GitHub</li>
-<li>HTML y CSS</li>
-<li>PSeInt</li>
-</ul>
+</div>
 
-<h2>Proyectos</h2>
+<div class="card">
 
-<h3>🎮 VideoJuego-POO</h3>
-<p>Videojuego desarrollado en Java aplicando Programación Orientada a Objetos.</p>
-
-<h3>🎬 Servicio-Streaming</h3>
-<p>Proyecto académico orientado a la simulación y gestión de una plataforma de streaming.</p>
-
-<h2>Contacto</h2>
+<h3>🎬 Servicio de Streaming</h3>
 
 <p>
-GitHub:
-<a href="https://github.com/nunezsofia051-debug">
-github.com/nunezsofia051-debug
-</a>
+Proyecto académico orientado a la simulación y gestión de una plataforma de streaming.
 </p>
 
-<p>
-LinkedIn: Agregar enlace cuando esté listo.
-</p>
+<a href="https://github.com/nunezsofia051-debug" target="_blank">Ver repositorio →</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">Estadísticas de GitHub</h2>
+
+<div class="estadisticas">
+
+<img src="https://github-readme-stats.vercel.app/api?username=nunezsofia051-debug&show_icons=true&theme=tokyonight">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nunezsofia051-debug&layout=compact&theme=tokyonight">
+
+</div>
 
 </section>
 
 <footer>
-© 2026 Sofía Núñez
+
+<p>© 2026 Sofía Núñez | Portfolio Profesional</p>
+
 </footer>
 
 </body>
